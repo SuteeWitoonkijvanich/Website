@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>วันอัฏฐมีบูชา</title>
+  <meta name="description" content="วันอัฏฐมีบูชา - วันสำคัญทางพระพุทธศาสนา ระลึกถึงการถวายพระเพลิงพระพุทธสรีระของพระพุทธเจ้า ณ มกุฏพันธนเจดีย์ เมืองกุสินารา">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap');
+
+    html, body {
+      height: 100%;
+      font-family: 'Sarabun', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #333;
+      overflow-x: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background-image: url('bngpra.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.25;
+    }
+
+    /* ปุ่มเมนูมือถือ */
+    .mobile-menu {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 text-white shadow-lg w-full">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="../index.html" class="font-bold text-xl sm:text-2xl text-white">วันสำคัญทางศาสนา</a>
+
+      <!-- เมนู Desktop -->
+      <div class="hidden md:flex space-x-6 lg:space-x-8">
+        <a href="../index.html" class="hover:text-gray-300 transition-colors duration-200">หน้าหลัก</a>
+             <a href="../leadme/about.html" class="hover:text-gray-300 transition-colors duration-200">เกี่ยวกับเรา</a>
+             <a href="../leadme/contact.html" class="hover:text-gray-300 transition-colors duration-200">ติดต่อเรา</a>
+      </div>
+
+      <!-- ปุ่มมือถือ -->
+      <button id="menu-btn" class="mobile-menu focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- เมนูมือถือ (dropdown) -->
+    <div id="menu" class="hidden flex-col bg-gray-700 text-white px-4 pb-4 space-y-2 md:hidden">
+      <a href="index.html" class="hover:text-gray-300 transition-colors duration-200">หน้าหลัก</a>
+             <a href="../leadme/about.html" class="hover:text-gray-300 transition-colors duration-200">เกี่ยวกับเรา</a>
+             <a href="../leadme/contact.html" class="hover:text-gray-300 transition-colors duration-200">ติดต่อเรา</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-4 md:p-8">
+    <!-- หัวข้อ -->
+    <section class="text-center my-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-2">วันอัฏฐมีบูชา</h1>
+      <p class="text-lg md:text-xl font-semibold text-red-500">วันแรม 8 ค่ำ เดือน 6</p>
+    </section>
+
+    <!-- ความสำคัญ -->
+    <section class="bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-300 mb-8">
+      <img class="w-full h-auto rounded-lg mb-6" src="../img/wanauttabhucha.png"
+        alt="พิธีถวายพระเพลิงพระพุทธสรีระ ณ มกุฏพันธนเจดีย์ เมืองกุสินารา - วันอัฏฐมีบูชา">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">ความสำคัญของวันอัฏฐมีบูชา</h2>
+      <p class="text-gray-700 text-lg leading-relaxed mb-4">
+        วันอัฏฐมีบูชาเป็นวันสำคัญทางพระพุทธศาสนา ที่ระลึกถึงเหตุการณ์การถวายพระเพลิงพระพุทธสรีระของสมเด็จพระสัมมาสัมพุทธเจ้า ณ มกุฏพันธนเจดีย์ เมืองกุสินารา หลังจากที่พระองค์เสด็จดับขันธปรินิพพานไปแล้ว 8 วัน
+      </p>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        วันอัฏฐมีบูชาจึงเป็นวันแห่งความโศกเศร้าของพุทธศาสนิกชน แต่ก็เป็นโอกาสสำคัญในการรำลึกถึงพระพุทธคุณ และร่วมกันสร้างบุญกุศลเพื่อสืบทอดพระพุทธศาสนาต่อไป
+      </p>
+    </section>
+
+    <!-- กิจกรรม -->
+    <section class="bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-300">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">กิจกรรมที่ควรปฏิบัติในวันอัฏฐมีบูชา</h2>
+      <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+        <li><strong>ทำบุญตักบาตร:</strong> เพื่อระลึกถึงการบำเพ็ญทานของพุทธศาสนิกชนในพุทธกาล</li>
+        <li><strong>ฟังเทศน์:</strong> เพื่อรับฟังและทำความเข้าใจหลักธรรมเกี่ยวกับไตรลักษณ์และความไม่เที่ยงของสรรพสิ่ง</li>
+        <li><strong>เวียนเทียน:</strong> การเดินเวียนรอบโบสถ์ 3 รอบ เพื่อแสดงความเคารพและรำลึกถึงพระพุทธเจ้า</li>
+        <li><strong>เจริญสมาธิภาวนา:</strong> เพื่อทำจิตใจให้สงบและระลึกถึงพระปัญญาและพระมหากรุณาธิคุณของพระพุทธเจ้า</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Script สำหรับเมนูมือถือ -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

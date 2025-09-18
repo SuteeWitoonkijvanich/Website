@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วันมาฆบูชา</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap');
+
+        /* CSS styles from your previous code */
+        html, body {
+            height: 100%;
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background-image: url('bngpra.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.25;
+        }
+
+        .navbar {
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <div>
+        <nav class="bg-gray-800 text-white shadow-lg w-full">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="../index.html" class="font-bold text-xl sm:text-2xl text-white">วันสำคัญทางศาสนา</a>
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="../index.html" class="hover:text-gray-300 transition-colors duration-200">หน้าหลัก</a>
+             <a href="../leadme/about.html" class="hover:text-gray-300 transition-colors duration-200">เกี่ยวกับเรา</a>
+             <a href="../leadme/contact.html" class="hover:text-gray-300 transition-colors duration-200">ติดต่อเรา</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content container mx-auto p-4 md:p-8">
+            <div class="text-center my-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-2">วันมาฆบูชา</h1>
+                <p class="text-lg md:text-xl font-semibold text-red-500">วันเพ็ญ ขึ้น15ค่ำ เดือน3</p>
+            </div>
+
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-300 mb-8">
+                <img class="w-full h-auto rounded-lg mb-6" src="../img/makabucha.png" alt="ภาพวันมาฆบูชา">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">ความสำคัญของวันมาฆบูชา</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    วันมาฆบูชาเป็นวันสำคัญทางพระพุทธศาสนา ที่ระลึกถึงเหตุการณ์ที่พระสงฆ์จำนวน 1,250 รูป มาประชุมพร้อมกันโดยมิได้นัดหมาย ณ เวฬุวันมหาวิหาร ในกรุงราชคฤห์ เพื่อฟังโอวาทปาติโมกข์จากพระพุทธเจ้า ซึ่งเป็นหัวใจสำคัญของพระพุทธศาสนา
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    เหตุการณ์สำคัญในวันมาฆบูชา เรียกว่า **"จาตุรงคสันนิบาต"** ซึ่งประกอบด้วยหลัก 4 ประการ:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 text-lg mt-4 space-y-2">
+                    <li>พระสงฆ์ 1,250 รูป มาประชุมโดยมิได้นัดหมาย</li>
+                    <li>พระสงฆ์เหล่านั้นเป็นพระอรหันต์ทั้งหมด</li>
+                    <li>พระพุทธเจ้าทรงแสดงโอวาทปาติโมกข์</li>
+                    <li>ตรงกับวันเพ็ญเดือน 3 (มาฆปุณณมี)</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-300">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">กิจกรรมที่ควรปฏิบัติในวันมาฆบูชา</h2>
+                <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+                    <li>**ทำบุญตักบาตร:** เพื่อทำความดีและเป็นสิริมงคลแก่ชีวิต</li>
+                    <li>**ฟังเทศน์:** เพื่อรับฟังและทำความเข้าใจหลักธรรมคำสอนของพระพุทธเจ้า</li>
+                    <li>**เวียนเทียน:** การเดินเวียนรอบโบสถ์ 3 รอบ แสดงความเคารพต่อพระรัตนตรัย</li>
+                    <li>**รักษาศีล:** การรักษาศีล 5 หรือศีล 8 เพื่อชำระจิตใจให้บริสุทธิ์</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

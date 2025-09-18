@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกี่ยวกับเรา - วันสำคัญทางพระพุทธศาสนา</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background: linear-gradient(to bottom right, #fff8e1, #ffe0b2, #ffccbc);
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="../index.html" class="font-bold text-xl sm:text-2xl">วันสำคัญทางศาสนา</a>
+      <div class="hidden md:flex space-x-6 lg:space-x-8">
+        <a href="../index.html" class="hover:text-gray-200 transition-colors duration-200">หน้าหลัก</a>
+        <a href="about.html" class="hover:text-gray-200 font-bold underline">เกี่ยวกับเรา</a>
+        <a href="contact.html" class="hover:text-gray-200">ติดต่อเรา</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section flex flex-col justify-center items-center text-center py-16 px-6">
+    <h1 class="text-4xl md:text-5xl font-bold text-white-600 mb-4">เกี่ยวกับเรา</h1>
+    <p class="text-lg md:text-xl text-gray-700 max-w-3xl">
+      เว็บไซต์นี้จัดทำขึ้นเพื่อการศึกษา <br>
+      โดยมีเป้าหมายในการให้ความรู้เกี่ยวกับ <span class="text-amber-600 font-semibold">วันสำคัญทางพระพุทธศาสนา</span>  
+      เพื่อเผยแพร่ความเข้าใจในคุณค่าทางศาสนา และปลูกฝังความศรัทธาในพระพุทธศาสนาแก่เยาวชนและผู้สนใจทั่วไป
+    </p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="card">
+        <h2 class="text-2xl font-bold text-blue-600 mb-3">วัตถุประสงค์</h2>
+        <p class="text-gray-700 leading-relaxed">
+          1. เพื่อใช้เป็นสื่อการเรียนรู้สำหรับนักเรียน นักศึกษา <br>
+          2. เพื่อเผยแพร่ความรู้เกี่ยวกับวันสำคัญทางพระพุทธศาสนา <br>
+          3. เพื่อส่งเสริมคุณธรรม จริยธรรม และความเข้าใจในพระพุทธศาสนา
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="text-2xl font-bold text-green-600 mb-3">สิ่งที่คุณจะได้จากเว็บไซต์นี้</h2>
+        <p class="text-gray-700 leading-relaxed">
+          ✨ ข้อมูลวันสำคัญทางพระพุทธศาสนาที่ถูกต้อง <br>
+          🌸 ภาพประกอบและบทความที่เข้าใจง่าย <br>
+          📖 เนื้อหาที่สามารถนำไปใช้ในการศึกษาและทำรายงาน
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-600 text-white mt-10">
+    © 2025 เว็บไซต์วันสำคัญทางพระพุทธศาสนา | จัดทำเพื่อการศึกษา
+  </footer>
+
+</body>
+</html>
