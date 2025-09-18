@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วันสำคัญทางพระพุทธศาสนา</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* เพิ่ม CSS สำหรับ Sidebar */
+        .sidebar {
+            width: 256px; /* 64 * 4px = 256px */
+            background-color: #1a202c; /* สีพื้นหลังตามรูป */
+            color: white;
+            padding-top: 1rem;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+            display: none; /* ซ่อนในหน้าจอเล็ก */
+        }
+        @media (min-width: 768px) {
+            .sidebar {
+                display: block; /* แสดงในหน้าจอขนาดกลางขึ้นไป */
+            }
+        }
+        .sidebar-item {
+            display: block;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s;
+        }
+        .sidebar-item:hover {
+            background-color: #2d3748; /* สี hover */
+        }
+        .sidebar-item .main-text {
+            font-size: 1.25rem;
+            font-weight: bold;
+            line-height: 1.5;
+            color: #ffffff;
+        }
+        .sidebar-item .sub-text {
+            font-size: 0.75rem;
+            color: #e0f2f7;
+        }
+
+        /* ปรับปรุง CSS ที่คุณมีอยู่เดิม */
+        .main-content {
+            flex-grow: 1;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .hero-section {
+            background-image: url('image_36541c.png');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .header-content {
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .header-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .header-content p {
+            font-size: 1.25rem;
+        }
+        .upcoming-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+        
+        @keyframes rotateFromRight {
+            from {
+                opacity: 0;
+                transform: rotate3d(0, 1, 0, 90deg);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+        .animate-rotate-from-right {
+            animation: rotateFromRight 0.5s ease-out forwards;
+        }
+        .card-animation-item {
+            opacity: 0;
+        }
+        .title-wrapper {
+            background-color: #22c55e;
+            border-color: #16a34a;
+        }
+        .footer-wrapper {
+            background-color: #374151;
+            color: #d1d5db;
+            padding: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <nav class="bg-gray-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl sm:text-2xl text-white">วันสำคัญทางศาสนา</a>
+            <div class="hidden md:flex space-x-6 lg:space-x-8">
+             <a href="#kaopansa" class="hover:text-gray-300 transition-colors duration-200">วันสำคัญทางพุทธศาสนา</a>
+             <a href="leadme/about.html" class="hover:text-gray-300 transition-colors duration-200">เกี่ยวกับเรา</a>
+             <a href="leadme/contact.html" class="hover:text-gray-300 transition-colors duration-200">ติดต่อเรา</a>
+        </div>
+        </div>
+    </nav>
+    
+    <div class="flex">
+        <aside class="sidebar">
+            <a href="#kaopansa" class="sidebar-item">
+                <div class="main-text">กิจกรรมที่สำคัญทางศาสนา</div>
+                <div class="sub-text"></div>
+            </a>
+            <a href="leftweb/khammai.html" class="sidebar-item">
+                <div class="main-text">ความหมาย</div>
+                <div class="sub-text"></div>
+            </a>    
+            <a href="leftweb/khamsomkun.html" class="sidebar-item">
+                <div class="main-text">ความสำคัญ</div>
+                <div class="sub-text"></div>
+            </a>
+            <a href="leftweb/sassanaput.html" class="sidebar-item">
+                <div class="main-text">ศาสนาพุทธ</div>
+                <div class="sub-text"></div>
+            </a>
+            <a href="leftweb/kanteamtoai.html" class="sidebar-item">
+                <div class="main-text">การเตรียมตัว</div>
+                <div class="sub-text"></div>
+            </a>
+            <a href="leftweb/kantangkai.html" class="sidebar-item">
+                <div class="main-text">การแต่งกาย</div>
+                <div class="sub-text"></div>
+            </a>
+        </aside>
+
+        <div class="main-content">
+            <header class="hero-section">
+                <div class="header-content">
+                    <h1>วันสำคัญทางพระพุทธศาสนา</h1>
+                    <p>เรียนรู้ความหมาย ความสำคัญ และกิจกรรมที่สำคัญทางศาสนา</p>
+                </div>
+            </header>
+            
+            <h2 class="upcoming-title">วันสำคัญที่จะมาถึง</h2>
+            
+            <main class="main-content container mx-auto px-4 py-8">
+                <iframe class="buddha-hero" 
+                    width="600"
+                    height="350"
+                    src="https://www.youtube.com/embed/h0YXmqG3Qyk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                </section>
+                <div style="margin-top:60px;"></div>
+                <div class="nav-button-container">
+                    <a href="wansumkun/kaopansa.html" class="nav-button">วันเข้าพรรษา</a>
+                    <a href="wansumkun/orkpansa.html" class="nav-button">วันออกพรรษา</a>
+                    <a href="wansumkun/arsarahabucha.html" class="nav-button">วันอาสาฬหบูชา</a>
+                    <a href="wansumkun/wisakabucha.html" class="nav-button">วันวิสาขบูชา</a>
+                    <a href="wansumkun/makhabucha.html" class="nav-button">วันมาฆบูชา</a>
+                    <a href="wansumkun/auttamibucha.html" class="nav-button">วันอัฏฐมีบูชา</a>
+                </div>
+            </main>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-8 mt-8">
+                <div class="relative bg-gray-100 rounded-xl overflow-hidden shadow-lg group cursor-pointer border border-gray-300 card-animation-item" data-delay="0">
+                    <img class="w-full h-48 object-cover object-center transition-transform duration-500 group-hover:scale-110" src="img/makabucha.png" alt="วันมาฆบูชา" onerror="this.onerror=null;this.src='https://placehold.co/800x480/e0f2f7/1a237e?text=วันมาฆบูชา';">
+                    <div class="absolute inset-0 bg-white bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-40"></div>
+                    <div class="p-4 text-gray-800">
+                        <h3 class="text-3xl font-bold mb-1">วันมาฆบูชา</h3>
+                        <p class="text-lg font-semibold text-red-500 mb-2">**12 กุมภาพันธ์ 2568**</p>
+                        <p class="text-gray-600 text-sm">ระลึกถึงวันที่พระสงฆ์ 1,250 รูปมาประชุมพร้อมกันโดยมิได้นัดหมาย เพื่อฟังพระพุทธเจ้าทรงแสดง "โอวาทปาติโมกข์"</p>
+                    </div>
+                    <div class="p-4 flex justify-end items-center text-white">
+                        <a href="wansumkun/makhabucha.html" class="inline-block bg-green-500 text-white font-semibold py-1 px-4 rounded-full transition-colors duration-300 hover:bg-green-600">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+                <div class="relative bg-gray-100 rounded-xl overflow-hidden shadow-lg group cursor-pointer border border-gray-300 card-animation-item" data-delay="100">
+                    <img class="w-full h-48 object-cover object-center transition-transform duration-500 group-hover:scale-110" src="img/wisakabucha.png" alt="วันวิสาขบูชา" onerror="this.onerror=null;this.src='https://placehold.co/800x480/e0f2f7/1a237e?text=วันวิสาขบูชา';">
+                    <div class="absolute inset-0 bg-white bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-40"></div>
+                    <div class="p-4 text-gray-800">
+                        <h3 class="text-3xl font-bold mb-1">วันวิสาขบูชา</h3>
+                        <p class="text-lg font-semibold text-red-500 mb-2">**11 พฤษภาคม 2568**</p>
+                        <p class="text-gray-600 text-sm">เป็นวันสำคัญที่สุดแห่งการตรัสรู้ ปรินิพพานของพระพุทธเจ้า</p>
+                    </div>
+                    <div class="p-4 flex justify-end items-center text-white">
+                        <a href="wansumkun/wisakabucha.html" class="inline-block bg-green-500 text-white font-semibold py-1 px-4 rounded-full transition-colors duration-300 hover:bg-green-600">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+                <div class="relative bg-gray-100 rounded-xl overflow-hidden shadow-lg group cursor-pointer border border-gray-300 card-animation-item" data-delay="200">
+                    <img class="w-full h-48 object-cover object-center transition-transform duration-500 group-hover:scale-110" src="img/wanauttabhucha.png " alt="วันอัฏฐมีบูชา" onerror="this.onerror=null;this.src='https://placehold.co/800x480/e0f2f7/1a237e?text=วันอัฏฐมีบูชา';">
+                    <div class="absolute inset-0 bg-white bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-40"></div>
+                    <div class="p-4 text-gray-800">
+                        <h3 class="text-3xl font-bold mb-1">วันอัฏฐมีบูชา</h3>
+                        <p class="text-lg font-semibold text-red-500 mb-2">**10 ตุลาคม 2568**</p>
+                        <p class="text-gray-600 text-sm">เป็นวันคล้ายวันถวายพระเพลิงพระพุทธสรีระของสมเด็จพระสัมมาสัมพุทธเจ้า</p>
+                    </div>
+                    <div class="p-4 flex justify-end items-center text-white">
+                        <a href="wansumkun/auttamibucha.html" class="inline-block bg-green-500 text-white font-semibold py-1 px-4 rounded-full transition-colors duration-300 hover:bg-green-600">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+                <div class="relative bg-gray-100 rounded-xl overflow-hidden shadow-lg group cursor-pointer border border-gray-300 card-animation-item" data-delay="300">
+                    <img class="w-full h-48 object-cover object-center transition-transform duration-500 group-hover:scale-110" src="img/arsaraha.png" alt="วันอาสาฬหบูชา" onerror="this.onerror=null;this.src='https://placehold.co/800x480/e0f2f7/1a237e?text=วันอาสาฬหบูชา';">
+                    <div class="absolute inset-0 bg-white bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-40"></div>
+                    <div class="p-4 text-gray-800">
+                        <h3 class="text-3xl font-bold mb-1">วันอาสาฬหบูชา</h3>
+                        <p class="text-lg font-semibold text-red-500 mb-2">**10 กรกฎาคม 2568**</p>
+                        <p class="text-gray-600 text-sm">วันแรกที่พระพุทธเจ้าทรงแสดงปฐมเทศนา คือ ธัมมจักกัปปวัตตนสูตร</p>
+                    </div>
+                    <div class="p-4 flex justify-end items-center text-white">
+                        <a href="wansumkun/arsarahabucha.html" class="inline-block bg-green-500 text-white font-semibold py-1 px-4 rounded-full transition-colors duration-300 hover:bg-green-600">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+                <div id="kaopansa" class="relative bg-gray-100 rounded-xl overflow-hidden shadow-lg group cursor-pointer border border-gray-300 card-animation-item" data-delay="400">
+                    <img class="w-full h-48 object-cover object-center transition-transform duration-500 group-hover:scale-110" src="img/kaopansa.png" alt="วันเข้าพรรษา" onerror="this.onerror=null;this.src='https://placehold.co/800x480/e0f2f7/1a237e?text=วันเข้าพรรษา';">
+                    <div class="absolute inset-0 bg-white bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-40"></div>
+                    <div class="p-4 text-gray-800">
+                        <h3 class="text-3xl font-bold mb-1">วันเข้าพรรษา</h3>
+                        <p class="text-lg font-semibold text-red-500 mb-2">**11 กรกฎาคม 2568**</p>
+                        <p class="text-gray-600 text-sm">เป็นวันที่พระภิกษุสงฆ์เริ่มอยู่จำพรรษาตลอด 3 เดือนในช่วงฤดูฝน</p>
+                    </div>
+                    <div class="p-4 flex justify-end items-center text-white"> 
+                        <a href="wansumkun/kaopansa.html" class="inline-block bg-green-500 text-white font-semibold py-1 px-4 rounded-full transition-colors duration-300 hover:bg-green-600">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+                <div class="relative bg-gray-100 rounded-xl overflow-hidden shadow-lg group cursor-pointer border border-gray-300 card-animation-item" data-delay="500">
+                    <img class="w-full h-48 object-cover object-center transition-transform duration-500 group-hover:scale-110" src="img/aokpansa.png" alt="วันออกพรรษา" onerror="this.onerror=null;this.src='https://placehold.co/800x480/e0f2f7/1a237e?text=วันออกพรรษา';">
+                    <div class="absolute inset-0 bg-white bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-40"></div>
+                    <div class="p-4 text-gray-800">
+                        <h3 class="text-3xl font-bold mb-1">วันออกพรรษา</h3>
+                        <p class="text-lg font-semibold text-red-500 mb-2">**7 ตุลาคม 2568**</p>
+                        <p class="text-gray-600 text-sm">วันสุดท้ายของการอยู่จำพรรษา สัญลักษณ์ของการสิ้นสุดฤดูฝน</p>
+                    </div>
+                    <div class="p-4 flex justify-end items-center text-white">
+                        <a href="wansumkun/orkpansa.html" class="inline-block bg-green-500 text-white font-semibold py-1 px-4 rounded-full transition-colors duration-300 hover:bg-green-600">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer-wrapper">
+        <p>&copy; 2025 วันสำคัญทางพระพุทธศาสนา. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const delay = entry.target.getAttribute('data-delay');
+                    setTimeout(() => {
+                        entry.target.classList.add('animate-rotate-from-right');
+                    }, delay);
+                } else {
+                    entry.target.classList.remove('animate-rotate-from-right');
+                }
+            });
+        }, { threshold: 0.5 });
+        const animatedItems = document.querySelectorAll('.card-animation-item');
+        animatedItems.forEach(item => {
+            observer.observe(item);
+        });
+        // โค้ดที่แก้ไขและเพิ่มเข้ามาเพื่อทำให้การ์ดทั้งหมดคลิกได้
+        document.querySelectorAll('.card-animation-item').forEach(card => {
+            card.addEventListener('click', (event) => {
+                // ถ้าคลิกโดนปุ่ม อ่านเพิ่มเติม โดยตรง ให้ยกเว้นการทำงาน
+                if (event.target.closest('a.inline-block')) {
+                    return;
+                }
+                
+                // หาลิงก์ในปุ่ม อ่านเพิ่มเติม แล้วเปลี่ยนหน้าเว็บ
+                const link = card.querySelector('a.inline-block');
+                if (link) {
+                    window.location.href = link.href;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
